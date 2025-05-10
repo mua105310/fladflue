@@ -7,7 +7,7 @@ import Image from 'next/image'
 import roskilde from '@/assets/roskilde.jpeg'
 import { AppFeature } from './AppFeature'
 
-export function FestivalsGuiden() {
+export function FladFlue() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
@@ -16,7 +16,7 @@ export function FestivalsGuiden() {
           <div className="absolute inset-0">
             <Image
               src={roskilde}
-              alt="Roskilde Festival"
+              alt="Festival Scene"
               layout="fill"
               objectFit="cover"
             />
@@ -24,7 +24,7 @@ export function FestivalsGuiden() {
               className="absolute inset-0 bg-gradient-to-b"
               style={{
                 background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1))',
-                zIndex: 5, // Ensures it appears above the image
+                zIndex: 5,
               }}
             />
           </div>
@@ -32,12 +32,12 @@ export function FestivalsGuiden() {
           <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-10">
             <div className="space-y-8">
               <h1 className="text-7xl font-bold leading-none tracking-tight max-w-4xl">
-                <span className="text-orange-500">Din Ultimative Guide</span>
-                <span className="block mt-4">Til Festival Pakkelisten</span>
+                <span className="text-orange-500">Din Guide Til</span>
+                <span className="block mt-4">Festival & Soundbox</span>
               </h1>
               <a href='/blog'>
                 <button className="bg-orange-500 hover:bg-orange-600 text-white mt-2 px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105">
-                  SE PAKKELISTEN
+                  SE GUIDEN
                 </button>
               </a>
             </div>
@@ -47,23 +47,22 @@ export function FestivalsGuiden() {
         <div className="bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="space-y-16">
-              {/* New Card: Festivalguiden Purpose */}
+              {/* About Section */}
               <div className="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
-                <h2 className="text-2xl font-bold text-orange-500 uppercase tracking-wide mb-4">Hvad er Festivalguiden?</h2>
-                <div className="hidden md:block  text-gray-300 text-sm mt-10">
+                <h2 className="text-2xl font-bold text-orange-500 uppercase tracking-wide mb-4">Hvad er FladFlue?</h2>
+                <div className="hidden md:block text-gray-300 text-sm mt-10">
                   <p>
-                    Festivalguiden er din ultimative festivalpartner. Vi hjælper dig med at planlægge og forberede alt, hvad du har brug for til din festivaloplevelse. 
-                    Uanset om du skal på Roskilde Festival, Smukfest, Northside eller en anden festival, har vi tips og pakkelister, så du ikke mangler noget.
-                    Vores guide dækker alt fra campingudstyr, personlig pleje og mad & drikke til festivalens must-haves som højttalere, powerbanks og meget mere. 
-                    Gør din festival til en succes med Festivalguiden!
+                    FladFlue er din guide til de bedste festivaloplevelser og soundbox setup. Vi hjælper dig med at skabe den perfekte festivalstemning, 
+                    uanset om du er på Roskilde Festival, Smukfest, Northside eller en anden festival. Vores ekspertise dækker både festivalpakkelister 
+                    og optimale soundbox opsætninger, så du kan nyde den bedste lydoplevelse. Fra campingudstyr og personlig pleje til professionelle 
+                    lydsystemer og festival must-haves - vi har dig dækket. Gør din festival til en uforglemmelig oplevelse med FladFlue!
                   </p>
                 </div>
-
               </div>
 
               {/* Category Buttons */}
               <div className="flex flex-wrap gap-4">
-                {['Basis udstyr', 'Camping gear', 'Mad & Drikke', 'Personlig pleje'].map((category, index) => (
+                {['Festival Guide', 'Soundbox Setup', 'Mad & Drikke', 'Personlig pleje'].map((category, index) => (
                   <button 
                     key={category}
                     className={cn(
@@ -83,12 +82,12 @@ export function FestivalsGuiden() {
                 {[
                   {
                     icon: <Tent className="w-8 h-8" />,
-                    title: "Camping Essentials",
+                    title: "Festival Setup",
                     items: ["Telt med pløkker og barduner", "Sovepose og liggeunderlag", "Campingstol og bord"]
                   },
                   {
                     icon: <Music className="w-8 h-8" />,
-                    title: "Festival Must-Haves",
+                    title: "Soundbox Guide",
                     items: ["SOUNDBOKS højttaler", "Powerbank og opladere", "Festival armbånd"]
                   },
                   {
@@ -130,7 +129,7 @@ export function FestivalsGuiden() {
 
               <AppFeature />
 
-              {/* Interactive Checklist Button */}
+              {/* Interactive Guide Button */}
               <div className="flex justify-center">
                 <a href='/blog'>
                 <button 
@@ -142,7 +141,7 @@ export function FestivalsGuiden() {
                   )}
                 >
                   <ListChecks className="w-6 h-6" />
-                  <span>Åbn interaktiv pakkeliste</span>
+                  <span>Åbn interaktiv guide</span>
                 </button>
                 </a>
               </div>
@@ -152,4 +151,4 @@ export function FestivalsGuiden() {
       </main>
     </div>
   )
-}
+} 

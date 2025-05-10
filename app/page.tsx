@@ -1,27 +1,27 @@
 import { Metadata } from 'next'
-import { FestivalsGuiden } from '@/components/festivalsguiden'
+import { FladFlue } from '@/components/fladflue'
 
 export const metadata: Metadata = {
-  title: 'Festivalsguiden 2025 | Din ultimative guide til festivaler',
-  description: 'Find den perfekte pakkeliste og få eksperttips til de bedste musikfestivaler i Danmark. Gør dig klar til en uforglemmelig festivaloplevelse i 2025!',
+  title: 'FladFlue | Din guide til festival og soundbox',
+  description: 'Find den perfekte guide til festivaler og soundbox oplevelser. Få eksperttips til de bedste festivaler og lydoplevelser i Danmark!',
 }
 
 export default function HomePage() {
   return (
     <>
-      <FestivalsGuiden />
+      <FladFlue />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Festivalsguiden 2025",
-            "url": "https://www.festivalsguiden.dk",
-            "description": "Din ultimative guide til festivalpakkelister og tips for de bedste musikfestivaler i Danmark",
+            "name": "FladFlue",
+            "url": "https://www.fladflue.dk",
+            "description": "Din guide til festivaler og soundbox oplevelser i Danmark",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://www.festivalsguiden.dk/search?q={search_term_string}",
+              "target": "https://www.fladflue.dk/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           })
