@@ -7,14 +7,14 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Festivalsguiden 2025 | Din ultimative guide til festivaler i Danmark',
-    template: '%s | Festivalsguiden 2025'
+    default: 'FladFlue | Din guide til festival og soundboks',
+    template: '%s | FladFlue'
   },
-  description: 'Festivalsguiden 2025 er din komplette ressource for festivalpakkelister, tips og guides til de bedste musikfestivaler i Danmark. Find inspiration og praktiske råd til din næste festivaloplevelse.',
-  keywords: ['festival', 'pakkeliste', 'musik', 'Roskilde', 'Smukfest', 'Danmark', '2025', 'festivalguide', 'festivaltips'],
-  authors: [{ name: 'Festivalsguiden Team' }],
-  creator: 'Festivalsguiden',
-  publisher: 'Festivalsguiden',
+  description: 'FladFlue er din komplette ressource for festivaloplevelser og soundboks setup. Find inspiration og praktiske råd til din næste festivaloplevelse med den perfekte lyd.',
+  keywords: ['festival', 'soundboks', 'musik', 'Roskilde', 'Smukfest', 'Danmark', 'festivalguide', 'festivaltips', 'lyd'],
+  authors: [{ name: 'FladFlue Team' }],
+  creator: 'FladFlue',
+  publisher: 'FladFlue',
   formatDetection: {
     email: false,
     address: false,
@@ -52,7 +52,7 @@ export default function RootLayout({
             <div className="flex justify-between h-20">
               <div className="flex items-center">
                 <Link href="/" className="text-xl font-bold tracking-tight text-white">
-                  FESTIVALSGUIDEN <span className="text-orange-500">2025</span>
+                  FLADFLUE
                 </Link>
               </div>
               <div className="flex items-center space-x-8">

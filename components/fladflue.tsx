@@ -19,11 +19,12 @@ export function FladFlue() {
               alt="Festival Scene"
               layout="fill"
               objectFit="cover"
+              className="brightness-75"
             />
             <div
               className="absolute inset-0 bg-gradient-to-b"
               style={{
-                background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1))',
+                background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))',
                 zIndex: 5,
               }}
             />
@@ -32,11 +33,11 @@ export function FladFlue() {
           <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-10">
             <div className="space-y-8">
               <h1 className="text-7xl font-bold leading-none tracking-tight max-w-4xl">
-                <span className="text-orange-500">Din Guide Til</span>
-                <span className="block mt-4">Festival & Soundbox</span>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-300">Din Guide Til</span>
+                <span className="block mt-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-300">Festival & Soundboks</span>
               </h1>
               <a href='/blog'>
-                <button className="bg-orange-500 hover:bg-orange-600 text-white mt-2 px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105">
+                <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white mt-2 px-8 py-4 text-lg font-medium rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20">
                   SE GUIDEN
                 </button>
               </a>
@@ -48,13 +49,13 @@ export function FladFlue() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="space-y-16">
               {/* About Section */}
-              <div className="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300">
-                <h2 className="text-2xl font-bold text-orange-500 uppercase tracking-wide mb-4">Hvad er FladFlue?</h2>
+              <div className="bg-gradient-to-br from-white/10 to-white/5 p-8 rounded-xl backdrop-blur-sm border border-white/10 hover:border-orange-500/50 transition-all duration-300">
+                <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-300 uppercase tracking-wide mb-4">Hvad er FladFlue?</h2>
                 <div className="hidden md:block text-gray-300 text-sm mt-10">
                   <p>
-                    FladFlue er din guide til de bedste festivaloplevelser og soundbox setup. Vi hjælper dig med at skabe den perfekte festivalstemning, 
+                    FladFlue er din guide til de bedste festivaloplevelser og soundboks setup. Vi hjælper dig med at skabe den perfekte festivalstemning, 
                     uanset om du er på Roskilde Festival, Smukfest, Northside eller en anden festival. Vores ekspertise dækker både festivalpakkelister 
-                    og optimale soundbox opsætninger, så du kan nyde den bedste lydoplevelse. Fra campingudstyr og personlig pleje til professionelle 
+                    og optimale soundboks opsætninger, så du kan nyde den bedste lydoplevelse. Fra campingudstyr og personlig pleje til professionelle 
                     lydsystemer og festival must-haves - vi har dig dækket. Gør din festival til en uforglemmelig oplevelse med FladFlue!
                   </p>
                 </div>
@@ -62,14 +63,14 @@ export function FladFlue() {
 
               {/* Category Buttons */}
               <div className="flex flex-wrap gap-4">
-                {['Festival Guide', 'Soundbox Setup', 'Mad & Drikke', 'Personlig pleje'].map((category, index) => (
+                {['Festival Guide', 'Soundboks Setup', 'Mad & Drikke', 'Personlig pleje'].map((category, index) => (
                   <button 
                     key={category}
                     className={cn(
-                      "px-6 py-3 rounded-none transition-all duration-300 text-sm uppercase tracking-wide",
+                      "px-6 py-3 rounded-xl transition-all duration-300 text-sm uppercase tracking-wide",
                       "hover:scale-105",
-                      index === 0 ? "bg-orange-500 text-white hover:bg-orange-600" : 
-                      "bg-white/10 text-white hover:bg-white/20"
+                      index === 0 ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700" : 
+                      "bg-gradient-to-br from-white/10 to-white/5 text-white hover:from-white/20 hover:to-white/10 border border-white/10 hover:border-orange-500/50"
                     )}
                   >
                     {category}
@@ -87,7 +88,7 @@ export function FladFlue() {
                   },
                   {
                     icon: <Music className="w-8 h-8" />,
-                    title: "Soundbox Guide",
+                    title: "Soundboks Guide",
                     items: ["SOUNDBOKS højttaler", "Powerbank og opladere", "Festival armbånd"]
                   },
                   {
@@ -106,20 +107,20 @@ export function FladFlue() {
                     className={cn(
                       "space-y-6 p-6 transition-all duration-300",
                       "hover:scale-105",
-                      "bg-white/5 hover:bg-white/10"
+                      "bg-gradient-to-br from-white/10 to-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:border-orange-500/50"
                     )}
                   >
                     <div className="flex items-center gap-3">
-                      <div className="p-3 rounded-none bg-orange-500/10 text-orange-500">
+                      <div className="p-3 rounded-lg bg-orange-500/10 text-orange-500">
                         {category.icon}
                       </div>
-                      <h2 className="text-xl font-semibold uppercase tracking-wide">{category.title}</h2>
+                      <h2 className="text-xl font-semibold uppercase tracking-wide text-orange-400">{category.title}</h2>
                     </div>
                     <ul className="space-y-3">
                       {category.items.map((item) => (
                         <li key={item} className="flex items-center gap-2 group">
-                          <CheckCircle2 className="w-5 h-5 text-orange-500 opacity-50 group-hover:opacity-100 transition-opacity" />
-                          <span className="text-gray-300 group-hover:text-white transition-colors">{item}</span>
+                          <CheckCircle2 className="w-5 h-5 text-orange-500 opacity-50 group-hover:opacity-100 transition-opacity group-hover:scale-110 transition-transform" />
+                          <span className="text-gray-300 group-hover:text-orange-300 transition-colors">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -135,9 +136,9 @@ export function FladFlue() {
                 <button 
                   className={cn(
                     "flex items-center gap-3 transition-all duration-300",
-                    "bg-orange-500 hover:bg-orange-600 text-white",
-                    "px-8 py-4 text-lg font-medium uppercase tracking-wide",
-                    "hover:scale-105"
+                    "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white",
+                    "px-8 py-4 text-lg font-medium uppercase tracking-wide rounded-xl",
+                    "hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20"
                   )}
                 >
                   <ListChecks className="w-6 h-6" />

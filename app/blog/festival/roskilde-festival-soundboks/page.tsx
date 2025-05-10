@@ -4,8 +4,8 @@ import roskilde from '@/assets/roskilde.jpeg'
 import { AppFeature } from '@/components/AppFeature'
 
 export const metadata = {
-  title: 'Lej en Soundboks til Roskilde Festival 2025 | Festivalsguiden',
-  description: 'Til Roskilde Festival 2025 kan du leje en Soundboks hos Moveboks i tre pakker: Basis (DKK 3.099), Plus (DKK 3.799) og Premium (DKK 3.999). Alle pakker inkluderer én Soundboks, ét batteri og gratis levering direkte til festivalen.',
+  title: 'Soundboks til Roskilde Festival 2024 | FladFlue',
+  description: 'Få den ultimative lydoplevelse på Roskilde Festival med en Soundboks. Vi guider dig gennem processen med at leje og opsætte din Soundboks for den perfekte festivalstemning.',
 };
 
 export default function RoskildeSoundboksPage() {
@@ -22,8 +22,8 @@ export default function RoskildeSoundboksPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-6xl font-bold mb-4">Lej en Soundboks til Roskilde Festival 2025</h1>
-            <p className="text-2xl text-gray-300">Den perfekte lydoplevelse til din festivalcamping</p>
+            <h1 className="text-6xl font-bold mb-4">Soundboks til Roskilde Festival 2024</h1>
+            <p className="text-2xl text-gray-300">Skab den perfekte festivalstemning med professionel lyd</p>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ export default function RoskildeSoundboksPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {[
             { icon: <MapPin className="w-6 h-6" />, label: "Lokation", value: "Roskilde" },
-            { icon: <Calendar className="w-6 h-6" />, label: "Dato", value: "28. juni - 5. juli 2025" },
+            { icon: <Calendar className="w-6 h-6" />, label: "Dato", value: "29. juni - 6. juli 2024" },
             { icon: <Clock className="w-6 h-6" />, label: "Varighed", value: "8 dage" },
             { icon: <Users className="w-6 h-6" />, label: "Deltagere", value: "130.000+" }
           ].map((item) => (
@@ -53,24 +53,24 @@ export default function RoskildeSoundboksPage() {
         {/* Main Content */}
         <div className="space-y-12">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">Lej Din Soundboks til Roskilde Festival 2025</h2>
+            <h2 className="text-4xl font-bold mb-6">Optimer Din Festivaloplevelse med Soundboks</h2>
             <p className="text-lg text-gray-300 mb-8">
-              Til Roskilde Festival 2025 kan du leje en Soundboks hos Moveboks i tre pakker: Basis (DKK 3.099), Plus (DKK 3.799) og Premium (DKK 3.999). Alle pakker inkluderer én Soundboks, ét batteri og gratis levering direkte til festivalen.
+              En Soundboks er nøglen til at skabe den perfekte stemning på din festivalcamping. Med Moveboks' professionelle udlejningsservice får du ikke kun en højttaler - du får en komplet lydoplevelse der gør din festival uforglemmelig.
             </p>
           </div>
 
           {/* Why Soundboks Section */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Hvorfor en Soundboks til Roskilde Festival?</h2>
+            <h2 className="text-3xl font-bold">Hvorfor en Soundboks er et must på Roskilde?</h2>
             <p className="text-lg text-gray-300">
-              Roskilde Festival er kendt for sin unikke atmosfære og fantastiske musikoplevelser. Men festivalen er ikke kun om musikken på scenerne - det er også om at skabe den perfekte stemning i dit teltområde. En Soundboks er den ultimative løsning til at forbedre din festivaloplevelse på flere måder:
+              Roskilde Festival er kendt for sin unikke stemning og fantastiske musikoplevelser. Men festivalen handler ikke kun om musikken på scenerne - det handler også om at skabe den perfekte atmosfære i dit teltområde. En Soundboks er den ultimative løsning til at forbedre din festivaloplevelse:
             </p>
             <ul className="list-disc list-inside space-y-3 text-gray-300">
               <li>Vandtæt design der tåler alt vejr</li>
-              <li>Kraftfuld lyd der kan høres over hele campingområdet</li>
+              <li>Kraftfuld lyd der skaber stemning i hele campingområdet</li>
               <li>Lang batterilevetid der holder hele festivalen</li>
-              <li>Nem at transportere med håndtag</li>
-              <li>Bluetooth-forbindelse til alle enheder</li>
+              <li>Nem at transportere med ergonomisk håndtag</li>
+              <li>Trådløs forbindelse til alle enheder</li>
             </ul>
           </div>
 
@@ -78,7 +78,7 @@ export default function RoskildeSoundboksPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold">Moveboks' Festivalpakker</h2>
             <p className="text-lg text-gray-300">
-              Moveboks tilbyder tre forskellige pakker til Roskilde Festival 2025. Alle pakker inkluderer en Soundboks, et batteri og gratis levering direkte til festivalen. Vælg den pakke der passer bedst til dine behov og sikkerhedskrav.
+              Moveboks tilbyder tre forskellige pakker til Roskilde Festival 2024. Alle pakker inkluderer en Soundboks, et batteri og gratis levering direkte til festivalen. Vælg den pakke der passer bedst til dine behov og sikkerhedskrav.
             </p>
           </div>
 
@@ -117,9 +117,9 @@ export default function RoskildeSoundboksPage() {
 
           {/* Festival Tips */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold">Tips til Brug af Soundboks på Festivalen</h2>
+            <h2 className="text-3xl font-bold">Tips til Den Bedste Lydoplevelse</h2>
             <p className="text-lg text-gray-300">
-              For at få den bedste oplevelse med din Soundboks på Roskilde Festival, har vi samlet nogle gode råd:
+              For at få den bedste oplevelse med din Soundboks på Roskilde Festival, har vi samlet nogle ekspertips:
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
@@ -198,7 +198,7 @@ export default function RoskildeSoundboksPage() {
           <div className="text-center space-y-6 py-12">
             <h2 className="text-3xl font-bold">Book Din Soundboks Nu</h2>
             <p className="text-gray-400 max-w-2xl mx-auto pb-2">
-              Sørg for at booke i god tid for at sikre levering af din Soundboks til Roskilde Festival 2025.
+              Sørg for at booke i god tid for at sikre levering af din Soundboks til Roskilde Festival 2024.
             </p>
             <a href='https://moveboks.dk/lej-soundboks-til-roskilde-festival' className="inline-block">
               <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-6 text-lg rounded-lg">

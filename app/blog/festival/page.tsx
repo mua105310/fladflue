@@ -10,7 +10,7 @@ export default function FestivalBlogPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Roskilde Card */}
           <Link 
-            href="/blog/festival/roskilde-festival-guide" 
+            href="/roskilde-festival-guide" 
             className="group relative aspect-[16/9] overflow-hidden"
           >
             <img 
@@ -31,7 +31,7 @@ export default function FestivalBlogPage() {
 
           {/* Smukfest Card */}
           <Link 
-            href="/blog/festival/smukfest-guide" 
+            href="/smukfest-guide" 
             className="group relative aspect-[16/9] overflow-hidden"
           >
             <img 
